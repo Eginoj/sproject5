@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   Procfile
+  web: bundle exec rails server -p $PORT
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
